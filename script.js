@@ -25,13 +25,13 @@ document.getElementById("content").innerHTML=`
 
 <br>
 
-<h3 style="text-decoration: underline;">Submitted To</h3>
+<h3><u>Submitted To</u></h3>
 <p>${teacherName}</p>
 <p>${designation}</p>
 
 <br>
 
-<h3 style="text-decoration: underline;">Submitted By</h3>
+<h3><u>Submitted By</u></h3>
 <p>${studentName}</p>
 <p>ID: ${studentId}</p>
 <p>Batch: ${batch}</p>
