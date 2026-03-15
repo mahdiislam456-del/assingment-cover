@@ -1,52 +1,67 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Assignment Cover Generator</title>
-<link rel="stylesheet" href="style.css">
-
-<!-- PDF library -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment Cover Page Generator</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<h2>Assignment Cover Page Generator(Created by Mahdi Islam - CSE 60)</h2>
+  <div class="cover">
 
-<div class="form-box">
+    <img src="smu_logo.png" alt="Logo" class="logo">
 
-<input type="text" id="courseTitle" placeholder="Course Title">
-<input type="text" id="courseCode" placeholder="Course Code">
-<input type="text" id="assignmentNo" placeholder="Assignment No">
-<input type="text" id="assignmentTitle" placeholder="Assignment Title">
+    <p class="credit">Created by Mahadi Islam Chowdhury, CSE60</p>
 
-<input type="text" id="teacherName" placeholder="Teacher Name">
-<input type="text" id="designation" placeholder="Designation">
+    <div class="form-box">
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter your name">
+    </div>
 
-<input type="text" id="studentName" placeholder="Student Name">
-<input type="text" id="studentId" placeholder="Student ID">
-<input type="text" id="batch" placeholder="Batch">
-<input type="text" id="section" placeholder="Section">
-<input type="text" id="date" placeholder="Date">
+    <div class="form-box">
+      <label for="csa">CSA60:</label>
+      <input type="text" id="csa" placeholder="Enter CSA60">
+    </div>
 
-<button onclick="generateCover()">Generate Cover</button>
-<button onclick="downloadPDF()">Download PDF</button>
+    <div class="form-box">
+      <label for="date">Date:</label>
+      <input type="date" id="date">
+    </div>
 
-</div>
+    <div class="form-box">
+      <label for="faye">Faye:</label>
+      <input type="text" id="faye" placeholder="Enter Faye">
+    </div>
 
-<hr>
+    <div class="form-box">
+      <button id="generate">Generate Cover</button>
+      <button id="download">Download PDF</button>
+    </div>
 
-<div id="coverPage" class="cover">
+  </div>
 
-<img src="smu_logo.png" class="logo">
+  <script src="script.js"></script>
+  <script>
+    window.onload = function() {
+      document.getElementById("date").valueAsDate = new Date();
+    };
 
+    document.getElementById("generate").addEventListener("click", function() {
+      let name = document.getElementById("name").value;
+      let csa = document.getElementById("csa").value;
+      let date = document.getElementById("date").value;
+      let faye = document.getElementById("faye").value;
 
-<div id="content"></div>
+      console.log("Name:", name);
+      console.log("CSA60:", csa);
+      console.log("Date:", date);
+      console.log("Faye:", faye);
 
-</div>
-
-<script src="script.js"></script>
+      // Add your logic to generate the cover page here
+    });
+  </script>
 
 </body>
 </html>
+
