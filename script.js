@@ -1,3 +1,4 @@
+const { use } = require("react");
 
 function generateCover(){
 
@@ -46,14 +47,15 @@ function downloadPDF(){
 
 let element = document.getElementById("coverPage");
 
-html2pdf()
-.set({
-margin:10,
-filename:"assignment-cover.pdf",
-html2canvas:{scale:2},
-jsPDF:{unit:"mm", format:"a4", orientation:"portrait"}
-})
-.from(element)
-.save();
+let opt = {
+    margin:       10,
+    filename:     'assignment-cover.pdf',
+    html2canvas:  {
+         scale: 2,
+         useCORS: true
+    },
+    jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+};
 
+html2pdf().set(opt).from(element).save();
 }
