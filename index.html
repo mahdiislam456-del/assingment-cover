@@ -1,12 +1,16 @@
-<<!DOCTYPE html>
+
+Joker and Wrath YT
+5:41 AM (0 minutes ago)
+to me
+
+<!DOCTYPE html>
 <html>
 <head>
-<title>Assignment Cover Generator</title>
-<link rel="stylesheet" href="style.css">
+    <title>Assignment Cover Generator</title>
+    <link rel="stylesheet" href="style.css">
 
-<!-- PDF library -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-
+    <!-- PDF library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </head>
 
 <body>
@@ -15,35 +19,30 @@
 
 <div class="form-box">
 
-<input type="text" id="courseTitle" placeholder="Course Title">
-<input type="text" id="courseCode" placeholder="Course Code">
-<input type="text" id="assignmentNo" placeholder="Assignment No">
-<input type="text" id="assignmentTitle" placeholder="Assignment Title">
+    <input type="text" id="courseTitle" placeholder="Course Title">
+    <input type="text" id="courseCode" placeholder="Course Code">
+    <input type="text" id="assignmentNo" placeholder="Assignment No">
+    <input type="text" id="assignmentTitle" placeholder="Assignment Title">
 
-<input type="text" id="teacherName" placeholder="Teacher Name">
-<input type="text" id="designation" placeholder="Designation">
+    <input type="text" id="teacherName" placeholder="Teacher Name">
+    <input type="text" id="designation" placeholder="Designation">
 
-<input type="text" id="studentName" placeholder="Student Name">
-<input type="text" id="studentId" placeholder="Student ID">
-<input type="text" id="batch" placeholder="Batch">
-<input type="text" id="section" placeholder="Section">
-<input type="text" id="date" placeholder="Date">
+    <input type="text" id="studentName" placeholder="Student Name">
+    <input type="text" id="studentId" placeholder="Student ID">
+    <input type="text" id="batch" placeholder="Batch">
+    <input type="text" id="section" placeholder="Section">
+    <input type="text" id="date" placeholder="Date">
 
-<button onclick="generateCover()">Generate Cover</button>
-<button onclick="downloadPDF()">Download PDF</button>
+    <button onclick="generateCover()">Generate Cover</button>
+    <button onclick="downloadPDF()">Download PDF</button>
 
 </div>
 
 <hr>
 
 <div id="coverPage" class="cover">
-
-<img src="smu_logo.png" class="logo">
-
-
-
-<div id="content"></div>
-
+    <img src="smu_logo.png" class="logo" alt="Logo">
+    <div id="content"></div>
 </div>
 
 <script src="script.js"></script>
