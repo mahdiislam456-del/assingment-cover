@@ -1,0 +1,37 @@
+body{
+font-family: "Times New Roman";
+text-align:center;
+background:#d1f9fc;
+}
+
+.form-box{
+margin:20px;
+}
+
+input{
+display:block;
+margin:8px auto;
+padding:8px;
+width:250px;
+}
+
+button{
+padding:10px 15px;
+margin:5px;
+cursor:pointer;
+background: #0623c7;
+color:#fff;
+}
+
+.cover{
+width:600px;
+margin:40px auto;
+background:rgb(248, 249, 255);
+padding:40px;
+border:1px solid #0d0e14;
+}
+
+.logo{
+width:280px;
+margin-bottom:20px;
+}
