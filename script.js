@@ -1,6 +1,6 @@
 function generateCover(){
 
-    l
+    
     let assignmentNo=document.getElementById("assignmentNo").value;
     let assignmentTitle=document.getElementById("assignmentTitle").value;
     let courseTitle=document.getElementById("courseTitle").value;
