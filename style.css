@@ -25,7 +25,8 @@ color: white;
 }
 
 .cover{
-width:600px;
+width:794px;
+min-height:1123px;
 margin:40px auto;
 background:white;
 padding:40px;

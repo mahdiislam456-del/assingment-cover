@@ -40,17 +40,19 @@ function generateCover(){
 
 function downloadPDF(){
 
-let element = document.getElementById("coverPage");
+// scroll to top before generating PDF
+window.scrollTo(0,0);
 
-html2pdf()
-.set({
-margin:10,
-filename:"assignment-cover.pdf",
-html2canvas:{scale:2},
-jsPDF:{unit:"mm", format:"a4", orientation:"portrait"}
-})
-.from(element)
-.save();
+const element = document.getElementById("coverPage");
 
+const opt = {
+  margin: 0,
+  filename: "assignment_cover.pdf",
+  image: { type: "jpeg", quality: 1 },
+  html2canvas: { scale: 2, scrollY: 0 },
+  jsPDF: { unit: "mm", format: "a4", orientation: "portrait" }
+};
+
+html2pdf().set(opt).from(element).save();
 
 }
