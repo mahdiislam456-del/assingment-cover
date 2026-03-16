@@ -24,8 +24,9 @@ color: white;
 
 }
 
-.cover{ width:600px;
-margin:40px auto; 
+.cover{
+width:600px;
+margin:auto; 
 background:white;
 padding:40px; 
 border:1px solid #ccc;

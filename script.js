@@ -39,17 +39,6 @@ function generateCover(){
 }
 
 function downloadPDF(){
-
-let element = document.getElementById("coverPage");
-
-html2pdf()
-.set({
-margin:10,
-filename:"assignment-cover.pdf",
-html2canvas:{scale:2},
-jsPDF:{unit:"mm", format:"a4", orientation:"portrait"}
-})
-.from(element)
-.save();
-
+let element=document.getElementById("coverPage");
+html2pdf().from(element).save("assignment-cover.pdf");
 }
