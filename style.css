@@ -24,15 +24,13 @@ color: white;
 
 }
 
-.cover{
-width:794px;
-min-height:1123px;
-margin:40px auto;
+.cover{ width:794px;
+margin:40px auto; 
 background:white;
-padding:40px;
+padding:40px; 
 border:1px solid #ccc;
-}
 
+}
 .logo{
 width:280px;
 margin-bottom:10px;
