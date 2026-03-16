@@ -40,17 +40,8 @@ function generateCover(){
 
 function downloadPDF(){
 
-    let element = document.getElementById("coverPage");
+const element = document.getElementById("coverPage");
 
-    // Small delay ensures the content is fully rendered
-    setTimeout(() => {
-        let opt = {
-            margin: 10,
-            filename: 'assignment-cover.pdf',
-            html2canvas: { scale: 2, useCORS: true },
-            jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-        };
+html2pdf().from(element).save("assignment_cover.pdf");
 
-        html2pdf().set(opt).from(element).save();
-    }, 150); // wait 150ms
 }
