@@ -34,7 +34,7 @@ function generateCover(){
     <br>
 
 
-    <b>
+    
     <h3><u>Submitted To</u></h3>
 
 

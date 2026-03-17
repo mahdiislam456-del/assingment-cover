@@ -27,21 +27,12 @@ color:#fff;
 width:650px;
 height:900px;
 margin:auto;
-background:rgb(248, 249, 255);
+background: #ffffff;
 padding:40px;
 line-height:1.3;
 font-size:18px;
 
 }
-
-.cover h1,
-.cover h2,
-.cover h3,
-.cover p{
-margin:10px 0;
-}
-
-
 
 .logo{
 width:280px;
