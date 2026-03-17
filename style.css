@@ -1,7 +1,7 @@
 body{
 font-family: "Times New Roman";
 text-align:center;
-background:#f5f5f5;
+background:#d1f9fc;
 }
 
 .form-box{
@@ -19,35 +19,22 @@ button{
 padding:10px 15px;
 margin:5px;
 cursor:pointer;
-background: #007BFF;
-color: white;
+background: #0623c7;
+color:#fff;
+}
+
+.cover{
+width:600px;
+margin:40px auto;
+background:rgb(248, 249, 255);
+padding:40px;
+border:1px solid #0d0e14;
 
 }
 
-.cover{                                      
-    width:794px;              /* Full A4 width */
-    min-height:1123px;        /* Full A4 height */
-    margin:40px auto;         /* FIXED (you had typo here) */
-    background:white;
-    padding:60px 80px;        /* Proper spacing */
-    border:1px solid #ccc;
-    box-sizing:border-box;
-}
-    
+
 
 .logo{
 width:280px;
-margin-bottom:10px;
-}
-
-#content{
-    margin-top:20px;
-    line-height:1.8;
-    font-size:16px;
-}
-
-/* Headings like "Submitted To" */
-#content h3{
-    margin-top:40px;
-    margin-bottom:10px;
+margin-bottom:20px;
 }
