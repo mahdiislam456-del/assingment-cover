@@ -22,6 +22,7 @@ function generateCover(){
 
 
     <br>
+    <br>
     
     <p><b>Assignment No:</b> ${assignmentNo}</p>
     <p><b>Assignment Title:</b> "${assignmentTitle}"</p>
@@ -39,6 +40,7 @@ function generateCover(){
 
 
     <br>
+    
     <p><b>Name:</b> ${teacherName}</p>
     <p><b>Designation:</b> ${designation}</p>
     <p><b>Department:</b> ${dept}</p>
@@ -53,13 +55,11 @@ function generateCover(){
 
 
     <br>
-
-
-
-    <p>${studentName}</p>
-    <p>ID: ${studentId}</p>
-    <p>Batch: ${batch}</p>
-    <p>Section: ${section}</p>
+    
+    <p><b>Name:</b> ${studentName}</p>
+    <p><b>ID:</b> ${studentId}</p>
+    <p><b>Batch:</b> ${batch}</p>
+    <p><b>Section:</b> ${section}</p>
 
 
     <br>
